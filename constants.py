@@ -127,85 +127,89 @@ SMXSWpH2L2l = SMXSWpH * SMBR2L2l
 SMXSWmH2L2l = SMXSWmH * SMBR2L2l
 SMXSttH2L2l = SMXSttH * SMBR2L2l
 
-JHUXSHZZ2L2la1             = ufloat(7.1517173,      0.23044650E-03)
-JHUXSHZZ2L2la2             = ufloat(2.5849908,      0.77294379E-04)
-JHUXSHZZ2L2la3             = ufloat(1.0954288,      0.43443941E-04)
-JHUXSHZZ2L2lL1             = ufloat(0.48754258E-07, 0.15112345E-11)
-JHUXSHZZ2L2lL1Zg           = ufloat(0.12338393E-06, 0.58002047E-11)
-JHUXSHZZ2L2la1a2           = ufloat(26.073377,      0.74026916E-03)
-JHUXSHZZ2L2la1a3           = ufloat(14.278034,      0.45318122E-03)
-JHUXSHZZ2L2la1L1           = ufloat(0.23727827,     0.15982277E-04)    #using g1prime2 = -12100.42
-JHUXSHZZ2L2la1L1Zg         = ufloat(13.145473,      0.53550812E-03)
-JHUXSHZZ2L2la2a3           = ufloat(14.3016,        0.000642865)
-JHUXSHZZ2L2la2L1           = ufloat(2.33083,        0.000141056)
-JHUXSHZZ2L2la2L1Zg         = ufloat(2.33096,        0.000140816)
-JHUXSHZZ2L2la3L1           = ufloat(14.3016,        0.000521711)
-JHUXSHZZ2L2la3L1Zg         = ufloat(14.3019,        0.000521397)
-JHUXSHZZ2L2lL1L1Zg         = ufloat(1.6472524E+01,  2.2689281E-02)
+JHUXSHZZ2L2la1             = ufloat(     7.1517044,  0.00027591496)
+JHUXSHZZ2L2la2             = ufloat(     2.5850323,  0.00010874196)
+JHUXSHZZ2L2la3             = ufloat(      1.095479,  5.6780596e-05)
+JHUXSHZZ2L2lL1             = ufloat( 4.8755556e-08,    1.75784e-12)
+JHUXSHZZ2L2lL1Zg           = ufloat(  float("nan"),   float("nan"))
+JHUXSHZZ2L2la1a2           = ufloat(     26.074307,  0.00094875635)
+JHUXSHZZ2L2la1a3           = ufloat(     14.277409,   0.0005409516)
+JHUXSHZZ2L2la1L1           = ufloat(    0.23726108,  2.1955163e-05)
+JHUXSHZZ2L2la1L1Zg         = ufloat(  float("nan"),   float("nan"))
+JHUXSHZZ2L2la2a3           = ufloat(     14.221651,  0.00063763008)
+JHUXSHZZ2L2la2L1           = ufloat(     2.3200652,  0.00014040255)
+JHUXSHZZ2L2la2L1Zg         = ufloat(  float("nan"),   float("nan"))
+JHUXSHZZ2L2la3L1           = ufloat(     14.264343,  0.00051778249)
+JHUXSHZZ2L2la3L1Zg         = ufloat(  float("nan"),   float("nan"))
+JHUXSHZZ2L2lL1L1Zg         = ufloat(  float("nan"),   float("nan"))
 
 JHUXSHZZ2L2leL = 1.4347981E+01
 JHUXSHZZ2L2leR = 1.3952140E+01
 
-JHUXSVBFa1                 = ufloat(968.674284006,      0.075115702763)
-JHUXSVBFa2                 = ufloat(13102.7106117,      0.522399748272)
-JHUXSVBFa3                 = ufloat(10909.5390002,      0.50975030067)
-JHUXSVBFL1                 = ufloat(2.083097999e-4,     1.24640942579e-08)
-JHUXSVBFL1Zg               = ufloat(0.49845301E-04,     0.21806623E-07)
-JHUXSVBFa1a2               = ufloat(2207.72848655,      0.126379327428)
-JHUXSVBFa1a3               = ufloat(1937.20646111,      0.122617320785)
-JHUXSVBFa1L1               = ufloat(2861.21349769,      0.0771278408768)
-JHUXSVBFa1L1Zg             = ufloat(1410.5494,          0.68216715)
-JHUXSVBFa2a3               = ufloat(1936.8416,          0.55683416)
-JHUXSVBFa2L1               = ufloat(2507.0486,          0.79805153)
-JHUXSVBFa2L1Zg             = ufloat(2433.0553,          0.78466670)
-JHUXSVBFa3L1               = ufloat(1939.6777,          0.72505911)
-JHUXSVBFa3L1Zg             = ufloat(1865.6689,          0.71037371)
-JHUXSVBFL1L1Zg             = ufloat(916.21310,          0.34424016)
+JHUXSHWWa1                 = ufloat(     312.04019,    0.021123201)
+JHUXSHWWa2                 = ufloat(      242.6283,    0.018655548)
+JHUXSHWWa3                 = ufloat(     100.79135,   0.0076985693)
+JHUXSHWWL1                 = ufloat( 1.6475531e-06,  1.1297587e-10)
+JHUXSHWWa1a2               = ufloat(     1149.9181,       0.085554)
+JHUXSHWWa1a3               = ufloat(      624.7195,    0.046033017)
+JHUXSHWWa1L1               = ufloat(     5.3585509,  0.00056067121)
+JHUXSHWWa2a3               = ufloat(     624.55269,    0.046795651)
+JHUXSHWWa2L1               = ufloat(     83.700384,   0.0062011144)
+JHUXSHWWa3L1               = ufloat(     624.23611,    0.045827636)
+JHUXSHWWL1Zg               = 0
+JHUXSHWWa1L1Zg             = JHUXSHWWa1
+JHUXSHWWa2L1Zg             = g2HWW**2 * JHUXSHWWa2
+JHUXSHWWa3L1Zg             = g4HWW**2 * JHUXSHWWa3
+JHUXSHWWL1L1Zg             = g1prime2HWW**2 * JHUXSHWWL1
 
-JHUXSZHa1                  = ufloat(9022.36,        1.17)
-JHUXSZHa2                  = ufloat(713123,         103)
-JHUXSZHa3                  = ufloat(434763.7,       62.2)
-JHUXSZHL1                  = ufloat(33652.46e-6,    4.19e-6)
-JHUXSZHL1Zg                = ufloat(3.4592597,      0.56602360E-03)
-JHUXSZHa1a2                = ufloat(4258.966,       0.783)
-JHUXSZHa1a3                = ufloat(18040.66,       2.73)
-JHUXSZHa1L1                = ufloat(6852.307,       0.929)
-JHUXSZHa1L1Zg              = ufloat(3479412.2,      486.4)
-JHUXSZHa2a3                = ufloat(2.87412e+06,    166.887)
-JHUXSZHa2L1                = ufloat(4.48796e+06,    215.167)
-JHUXSZHa2L1Zg              = ufloat(4.48622e+06,    1502.75)
-JHUXSZHa3L1                = ufloat(2.87379e+06,    207.548)
-JHUXSZHa3L1Zg              = ufloat(2.8737e+06,     614.514)
-JHUXSZHL1L1Zg              = ufloat(1.43739e+06,    239.856)
+JHUXSVBFa1                 = ufloat(     968.88143,     0.42919631)
+JHUXSVBFa2                 = ufloat(     13097.831,       3.335825)
+JHUXSVBFa3                 = ufloat(     10910.237,      3.2662293)
+JHUXSVBFL1                 = ufloat( 0.00020829261,  7.6725395e-08)
+JHUXSVBFL1Zg               = ufloat(  float("nan"),   float("nan"))
+JHUXSVBFa1a2               = ufloat(     2207.6738,     0.73510552)
+JHUXSVBFa1a3               = ufloat(     1936.4327,     0.72879437)
+JHUXSVBFa1L1               = ufloat(     2861.7003,      1.0169832)
+JHUXSVBFa1L1Zg             = ufloat(  float("nan"),   float("nan"))
+JHUXSVBFa2a3               = ufloat(      1937.588,     0.55595604)
+JHUXSVBFa2L1               = ufloat(     2507.7202,     0.81000667)
+JHUXSVBFa2L1Zg             = ufloat(  float("nan"),   float("nan"))
+JHUXSVBFa3L1               = ufloat(     1940.0653,     0.72555356)
+JHUXSVBFa3L1Zg             = ufloat(  float("nan"),   float("nan"))
+JHUXSVBFL1L1Zg             = ufloat(  float("nan"),   float("nan"))
 
-JHUXSWHa1                  = ufloat(30998.54,       2.50)
-JHUXSWHa2                  = ufloat(3106339,        308)
-JHUXSWHa3                  = ufloat(2028656,        191)
-JHUXSWHL1                  = ufloat(11234.91e-5,    1.10e-5)
-JHUXSWHL1Zg                = ufloat(0,              0)
-JHUXSWHa1a2                = ufloat(16486.68,       2.01)
-JHUXSWHa1a3                = ufloat(62001.57,       5.54)
-JHUXSWHa1L1                = ufloat(25302.37,       2.67)
-JHUXSWHa2a3                = ufloat(2.96308e+07,    2132.86)
-JHUXSWHa2L1                = ufloat(4.47663e+07,    4985.14)
-JHUXSWHa3L1                = ufloat(2.96285e+07,    3423.37)
+JHUXSZHa1                  = ufloat(     1436962.5,      83.625632)
+JHUXSZHa2                  = ufloat( 1.1360185e+08,      16747.661)
+JHUXSZHa3                  = ufloat(      69240434,      3748.8771)
+JHUXSZHL1                  = ufloat(     5.3612664,   0.0002767711)
+JHUXSZHL1Zg                = ufloat(  float("nan"),   float("nan"))
+JHUXSZHa1a2                = ufloat(  float("nan"),   float("nan"))
+JHUXSZHa1a3                = ufloat(     2873554.2,      219.26268)
+JHUXSZHa1L1                = ufloat(     1091701.7,      59.256584)
+JHUXSZHa1L1Zg              = ufloat(  float("nan"),   float("nan"))
+JHUXSZHa2a3                = ufloat(     2874199.8,      268.19757)
+JHUXSZHa2L1                = ufloat(     4487848.2,      377.77735)
+JHUXSZHa2L1Zg              = ufloat(  float("nan"),   float("nan"))
+JHUXSZHa3L1                = ufloat(     2874078.9,      185.23632)
+JHUXSZHa3L1Zg              = ufloat(  float("nan"),   float("nan"))
+JHUXSZHL1L1Zg              = ufloat(  float("nan"),   float("nan"))
 
-#VH cross sections changed somewhere between c85a387eaf3a8a92f5893e5293ed3c3d36107e16 and fbf449150f4df49f66b21c1638adb02b68a308d0
-#correct for that
-def fixVH():
-    ZHxsecratio = ufloat(158.49737883504775, 0.39826108447619935)
-    WHxsecratio = ZHxsecratio*3
-    for V in "Z", "W":
-        VHxsecratio = locals()[V+"Hxsecratio"]
-        for coupling in "a1", "a2", "a3", "L1", "a1a2", "a1a3", "a1L1":
-            name = "JHUXS{}H{}".format(V, coupling)
-            newvalue = globals()[name] * VHxsecratio
-            globals()[name] = newvalue
-fixVH(); del fixVH
-JHUXSWHa1L1Zg       = JHUXSWHa1
-JHUXSWHa2L1Zg       = g2WH**2 * JHUXSWHa2
-JHUXSWHa3L1Zg       = g4WH**2 * JHUXSWHa3
-JHUXSWHL1L1Zg       = g1prime2WH**2 * JHUXSWHL1
+JHUXSWHa1                  = ufloat(      14812634,      641.29391)
+JHUXSWHa2                  = ufloat( 1.4845134e+09,      136032.27)
+JHUXSWHa3                  = ufloat( 9.6946727e+08,      44971.281)
+JHUXSWHL1                  = ufloat(     53.690892,   0.0020688232)
+JHUXSWHa1a2                = ufloat(     7880029.9,      956.05242)
+JHUXSWHa1a3                = ufloat(      29624979,      1342.1639)
+JHUXSWHa1L1                = ufloat(      12092127,      561.89256)
+JHUXSWHa2a3                = ufloat(      29628578,      1322.2949)
+JHUXSWHa2L1                = ufloat(      44770798,      1955.8354)
+JHUXSWHa3L1                = ufloat(      29625340,      1250.1836)
+
+JHUXSWHL1Zg                = 0
+JHUXSWHa1L1Zg              = JHUXSWHa1
+JHUXSWHa2L1Zg              = g2WH**2 * JHUXSWHa2
+JHUXSWHa3L1Zg              = g4WH**2 * JHUXSWHa3
+JHUXSWHL1L1Zg              = g1prime2WH**2 * JHUXSWHL1
 
 JHUXSHJJa2       = ufloat(14583.61,       0.94)
 JHUXSHJJa3       = ufloat(14397.13,       0.97)
@@ -227,6 +231,17 @@ JHUXSHZZ2L2la2L1Zg = (JHUXSHZZ2L2la2L1Zg - g2HZZ      **2 * JHUXSHZZ2L2la2 - ghz
 JHUXSHZZ2L2la3L1   = (JHUXSHZZ2L2la3L1   - g4HZZ      **2 * JHUXSHZZ2L2la3 - g1prime2HZZ    **2 * JHUXSHZZ2L2lL1  ) / (g4HZZ           * g1prime2HZZ    )
 JHUXSHZZ2L2la3L1Zg = (JHUXSHZZ2L2la3L1Zg - g4HZZ      **2 * JHUXSHZZ2L2la3 - ghzgs1prime2HZZ**2 * JHUXSHZZ2L2lL1Zg) / (g4HZZ           * ghzgs1prime2HZZ)
 JHUXSHZZ2L2lL1L1Zg = (JHUXSHZZ2L2lL1L1Zg - g1prime2HZZ**2 * JHUXSHZZ2L2lL1 - ghzgs1prime2HZZ**2 * JHUXSHZZ2L2lL1Zg) / (g1prime2HZZ     * ghzgs1prime2HZZ)
+
+JHUXSHWWa1a2       = (JHUXSHWWa1a2       -                    JHUXSHWWa1     - g2HWW            **2 * JHUXSHWWa2      ) / (g2HWW                                    )
+JHUXSHWWa1a3       = (JHUXSHWWa1a3       -                    JHUXSHWWa1     - g4HWW            **2 * JHUXSHWWa3      ) / (g4HWW                                    )
+JHUXSHWWa1L1       = (JHUXSHWWa1L1       -                    JHUXSHWWa1     - g1prime2HWW      **2 * JHUXSHWWL1      ) / (g1prime2HWW                              )
+JHUXSHWWa1L1Zg     = 0
+JHUXSHWWa2a3       = (JHUXSHWWa2a3       - g2HWW        **2 * JHUXSHWWa2     - g4HWW            **2 * JHUXSHWWa3      ) / (g2HWW                 * g4HWW            )
+JHUXSHWWa2L1       = (JHUXSHWWa2L1       - g2HWW        **2 * JHUXSHWWa2     - g1prime2HWW      **2 * JHUXSHWWL1      ) / (g2HWW                 * g1prime2HWW      )
+JHUXSHWWa2L1Zg     = 0
+JHUXSHWWa3L1       = (JHUXSHWWa3L1       - g4HWW        **2 * JHUXSHWWa3     - g1prime2HWW      **2 * JHUXSHWWL1      ) / (g4HWW                 * g1prime2HWW      )
+JHUXSHWWa3L1Zg     = 0
+JHUXSHWWL1L1Zg     = 0
 
 JHUXSVBFa1a2       = (JHUXSVBFa1a2       -                        JHUXSVBFa1     - g2VBF            **2 * JHUXSVBFa2      ) / (g2VBF                                )
 JHUXSVBFa1a3       = (JHUXSVBFa1a3       -                        JHUXSVBFa1     - g4VBF            **2 * JHUXSVBFa3      ) / (g4VBF                                )
@@ -279,6 +294,16 @@ if __name__ == "__main__":
     print "                     g2*g4*  a2a3XS = {:%}".format((                 g2HZZ*g4HZZ        * JHUXSHZZ2L2la2a3  ) / JHUXSHZZ2L2la1)
     print "               g1prime2*g4*  a3L1XS = {:%}".format((                 g1prime2HZZ*g4HZZ  * JHUXSHZZ2L2la3L1  ) / JHUXSHZZ2L2la1)
     print "           ghzgs1prime2*g4*a3L1ZgXS = {:%}".format((             ghzgs1prime2HZZ*g4HZZ  * JHUXSHZZ2L2la3L1Zg) / JHUXSHZZ2L2la1)
+    print
+    print "  HWW:"
+    print "    a1XS -           g2**2*    a2XS = {:%}".format((JHUXSHWWa1     - g2HWW**2           * JHUXSHWWa2        ) / JHUXSHWWa1    )
+    print "    a1XS -           g4**2*    a3XS = {:%}".format((JHUXSHWWa1     - g4HWW**2           * JHUXSHWWa3        ) / JHUXSHWWa1    )
+    print "    a1XS -     g1prime2**2*    L1XS = {:%}".format((JHUXSHWWa1     - g1prime2HWW**2     * JHUXSHWWL1        ) / JHUXSHWWa1    )
+#   print "    a1XS - ghzgs1prime2**2*  L1ZgXS = {:%}".format((JHUXSHWWa1     - ghzgs1prime2HWW**2 * JHUXSHWWL1Zg      ) / JHUXSHWWa1    )
+    print "                        g4*  a1a3XS = {:%}".format((                 g4HWW              * JHUXSHWWa1a3      ) / JHUXSHWWa1    )
+    print "                     g2*g4*  a2a3XS = {:%}".format((                 g2HWW  *g4HWW      * JHUXSHWWa2a3      ) / JHUXSHWWa1    )
+    print "               g1prime2*g4*  a3L1XS = {:%}".format((                g1prime2HWW  *g4HWW * JHUXSHWWa3L1      ) / JHUXSHWWa1    )
+#   print "           ghzgs1prime2*g4*a3L1ZgXS = {:%}".format((            ghzgs1prime2HWW  *g4HWW * JHUXSHWWa3L1Zg    ) / JHUXSHWWa1    )
     print
     print "  VBF:"
     print "    a1XS -           g2**2*    a2XS = {:%}".format((JHUXSVBFa1     - g2VBF**2           * JHUXSVBFa2        ) / JHUXSVBFa1    )
@@ -336,6 +361,11 @@ JHUXSHZZ2L2la1a3   = \
 JHUXSHZZ2L2la2a3   = \
 JHUXSHZZ2L2la3L1   = \
 JHUXSHZZ2L2la3L1Zg = 0
+
+JHUXSHWW2L2la1a3   = \
+JHUXSHWW2L2la2a3   = \
+JHUXSHWW2L2la3L1   = \
+JHUXSHWW2L2la3L1Zg = 0
 
 JHUXSVBFa1a3   = \
 JHUXSVBFa2a3   = \
