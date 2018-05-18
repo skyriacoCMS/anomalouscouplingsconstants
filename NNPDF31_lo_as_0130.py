@@ -49,6 +49,46 @@ JHUXSWHa2a3                = ufloat(      31204114,      975.07201)
 JHUXSWHa2L1                = ufloat(      47596734,      1124.0434)
 JHUXSWHa3L1                = ufloat(      31773358,      677.46665)
 
+#JHUGen returned nan several hundred times for WHa1a2.
+#Try to estimate it from other numbers
+#(in a function to avoid exposing local variables)
+def JHUXSWHa1a2():
+  import NNPDF30_lo_as_0130, numpy
+  WH31_over_WH30 = [
+    JHUXSWHa1 / NNPDF30_lo_as_0130.JHUXSWHa1,
+    JHUXSWHa2 / NNPDF30_lo_as_0130.JHUXSWHa2,
+    JHUXSWHa3 / NNPDF30_lo_as_0130.JHUXSWHa3,
+    JHUXSWHL1 / NNPDF30_lo_as_0130.JHUXSWHL1,
+    (JHUXSWHa1L1 - JHUXSWHa1           - JHUXSWHL1 * g1prime2WH**2) /         g1prime2WH  / NNPDF30_lo_as_0130.JHUXSWHa1L1,
+    (JHUXSWHa2L1 - JHUXSWHa2 * g2WH**2 - JHUXSWHL1 * g1prime2WH**2) / (g2WH * g1prime2WH) / NNPDF30_lo_as_0130.JHUXSWHa2L1,
+  ]
+  ZH31_over_ZH30 = [
+    JHUXSZHa1 / NNPDF30_lo_as_0130.JHUXSZHa1,
+    JHUXSZHa2 / NNPDF30_lo_as_0130.JHUXSZHa2,
+    JHUXSZHa3 / NNPDF30_lo_as_0130.JHUXSZHa3,
+    JHUXSZHL1 / NNPDF30_lo_as_0130.JHUXSZHL1,
+    (JHUXSZHa1L1 - JHUXSZHa1           - JHUXSZHL1 * g1prime2ZH**2) /         g1prime2ZH  / NNPDF30_lo_as_0130.JHUXSZHa1L1,
+    (JHUXSZHa2L1 - JHUXSZHa2 * g2ZH**2 - JHUXSZHL1 * g1prime2ZH**2) / (g2ZH * g1prime2ZH) / NNPDF30_lo_as_0130.JHUXSZHa2L1,
+  ]
+  WH31_ZH30_over_WH30_ZH31 = [
+    WH / ZH for WH, ZH in zip(WH31_over_WH30, ZH31_over_ZH30)
+  ]
+  average = numpy.mean(WH31_ZH30_over_WH30_ZH31)
+  averageerror = average.std_dev
+  average = average.nominal_value
+  stddev = numpy.std([_.nominal_value for _ in WH31_ZH30_over_WH30_ZH31])
+  averageerror = (averageerror ** 2 + stddev ** 2) ** .5
+
+  interference = ufloat(average, averageerror) * (
+    (JHUXSZHa1a2 - JHUXSZHa1 - JHUXSZHa2 * g2ZH**2) / g2ZH
+  ) * (
+    NNPDF30_lo_as_0130.JHUXSWHa1a2 / NNPDF30_lo_as_0130.JHUXSZHa1a2
+  )
+
+  return interference * g2WH + JHUXSWHa1 + JHUXSWHa2 * g2WH**2
+
+JHUXSWHa1a2 = JHUXSWHa1a2()
+
 JHUXSHJJa2                 = ufloat(     14872.334,      4.6483102)
 JHUXSHJJa3                 = ufloat(     14679.974,      4.7524727)
 JHUXSHJJa2a3               = ufloat(     29728.575,      9.4642949)
