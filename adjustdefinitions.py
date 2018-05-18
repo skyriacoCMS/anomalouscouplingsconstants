@@ -44,7 +44,11 @@ JHUXSttHkappakappatilde = (JHUXSttHkappakappatilde - JHUXSttHkappa - kappa_tilde
 normalize_WH_to_ZH = SMXSWH / JHUXSWHa1 / (SMXSZH / JHUXSZHa1)
 
 if __name__ == "__main__":
-    print "All of the following should be 0:"
+    print "=============================================="
+    print "All of the following should be around 0"
+    print "(if they're huge that indicates a mistake)"
+    print "(but if they're not within errors that's fine)"
+    print "=============================================="
     print
     print "  VBF:"
     print "    a1XS -           g2**2*    a2XS = {:%}".format((JHUXSVBFa1     - g2VBF**2           * JHUXSVBFa2        ) / JHUXSVBFa1    )
@@ -94,6 +98,7 @@ if __name__ == "__main__":
     print "    a1XS -           g4**2*    a3XS  = {:%}".format((JHUXSZHa1 + JHUXSWHa1*normalize_WH_to_ZH - g4VH              **2 * (JHUXSZHa3   + JHUXSWHa3  *normalize_WH_to_ZH)) / (JHUXSZHa1 + JHUXSWHa1*normalize_WH_to_ZH))
     print "    a1XS -     g1prime2**2*    L1XS  = {:%}".format((JHUXSZHa1 + JHUXSWHa1*normalize_WH_to_ZH - g1prime2VH    **2 * (JHUXSZHL1   + JHUXSWHL1  *normalize_WH_to_ZH)) / (JHUXSZHa1 + JHUXSWHa1*normalize_WH_to_ZH))
     print "    a1XS - ghzgs1prime2**2*  L1ZgXS  = {:%}".format((JHUXSZHa1 + JHUXSWHa1*normalize_WH_to_ZH - ghzgs1prime2VH**2 * (JHUXSZHL1Zg                                 )) / (JHUXSZHa1 + JHUXSWHa1*normalize_WH_to_ZH))
+    print
     del kt, JHUXSttHk, JHUXSttHkt, JHUXSttHkkt
 
 #Set them to exactly 0
@@ -134,3 +139,85 @@ for k, v in globals().items():
     if "__" in k: continue
     assert v is not None, k
 del k, v, _
+
+if __name__ == "__main__":
+    print "================================================================="
+    print "pure cross sections are for ai=1."
+    print "interference cross sections are for ai=aj=1, minus the pure terms"
+    print "================================================================="
+    print
+    print "==="
+    print "VBF"
+    print "==="
+    print
+    print "a1:    ", JHUXSVBFa1
+    print "a2:    ", JHUXSVBFa2
+    print "a3:    ", JHUXSVBFa3
+    print "L1:    ", JHUXSVBFL1
+    print "L1Zg:  ", JHUXSVBFL1Zg
+    print
+    print "a1a2:  ", JHUXSVBFa1a2
+    print "a1a3:  ", JHUXSVBFa1a3
+    print "a1L1:  ", JHUXSVBFa1L1
+    print "a1L1Zg:", JHUXSVBFa1L1Zg
+    print "a2a3:  ", JHUXSVBFa2a3
+    print "a2L1:  ", JHUXSVBFa2L1
+    print "a2L1Zg:", JHUXSVBFa2L1Zg
+    print "a3L1:  ", JHUXSVBFa3L1
+    print "a3L1Zg:", JHUXSVBFa3L1Zg
+    print "L1L1Zg:", JHUXSVBFL1L1Zg
+    print
+    print "=="
+    print "ZH"
+    print "=="
+    print
+    print "a1:    ", JHUXSZHa1
+    print "a2:    ", JHUXSZHa2
+    print "a3:    ", JHUXSZHa3
+    print "L1:    ", JHUXSZHL1
+    print "L1Zg:  ", JHUXSZHL1Zg
+    print
+    print "a1a2:  ", JHUXSZHa1a2
+    print "a1a3:  ", JHUXSZHa1a3
+    print "a1L1:  ", JHUXSZHa1L1
+    print "a1L1Zg:", JHUXSZHa1L1Zg
+    print "a2a3:  ", JHUXSZHa2a3
+    print "a2L1:  ", JHUXSZHa2L1
+    print "a2L1Zg:", JHUXSZHa2L1Zg
+    print "a3L1:  ", JHUXSZHa3L1
+    print "a3L1Zg:", JHUXSZHa3L1Zg
+    print "L1L1Zg:", JHUXSZHL1L1Zg
+    print
+    print "=="
+    print "WH"
+    print "=="
+    print
+    print "a1:    ", JHUXSWHa1
+    print "a2:    ", JHUXSWHa2
+    print "a3:    ", JHUXSWHa3
+    print "L1:    ", JHUXSWHL1
+    print
+    print "a1a2:  ", JHUXSWHa1a2
+    print "a1a3:  ", JHUXSWHa1a3
+    print "a1L1:  ", JHUXSWHa1L1
+    print "a2a3:  ", JHUXSWHa2a3
+    print "a2L1:  ", JHUXSWHa2L1
+    print "a3L1:  ", JHUXSWHa3L1
+    print
+    print "===="
+    print "H+JJ"
+    print "===="
+    print
+    print "a2:    ", JHUXSHJJa2
+    print "a3:    ", JHUXSHJJa3
+    print
+    print "a2a3:  ", JHUXSHJJa2a3
+    print
+    print "==="
+    print "ttH"
+    print "==="
+    print
+    print "k:     ", JHUXSttHkappa
+    print "k~:    ", JHUXSttHkappatilde
+    print
+    print "kk~:   ", JHUXSttHkappakappatilde

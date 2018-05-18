@@ -65,7 +65,11 @@ JHUXSHWWa3L1Zg     = 0
 JHUXSHWWL1L1Zg     = 0
 
 if __name__ == "__main__":
-    print "All of the following should be 0:"
+    print "=============================================="
+    print "All of the following should be around 0"
+    print "(if they're huge that indicates a mistake)"
+    print "(but if they're not within errors that's fine)"
+    print "=============================================="
     print
     print "  decay:"
     print "    a1XS -           g2**2*    a2XS = {:%}".format((JHUXSHZZ2L2la1 - g2HZZ**2           * JHUXSHZZ2L2la2    ) / JHUXSHZZ2L2la1)
@@ -116,3 +120,45 @@ for k, v in globals().items():
     assert v is not None, k
 del k, v, _
 
+if __name__ == "__main__":
+    print "================================================================="
+    print "pure cross sections are for ai=1."
+    print "interference cross sections are for ai=aj=1, minus the pure terms"
+    print "================================================================="
+    print
+    print "============"
+    print "H->ZZ->2l2l'"
+    print "============"
+    print
+    print "a1:    ", JHUXSHZZ2L2la1
+    print "a2:    ", JHUXSHZZ2L2la2
+    print "a3:    ", JHUXSHZZ2L2la3
+    print "L1:    ", JHUXSHZZ2L2lL1
+    print "L1Zg:  ", JHUXSHZZ2L2lL1Zg
+    print
+    print "a1a2:  ", JHUXSHZZ2L2la1a2
+    print "a1a3:  ", JHUXSHZZ2L2la1a3
+    print "a1L1:  ", JHUXSHZZ2L2la1L1
+    print "a1L1Zg:", JHUXSHZZ2L2la1L1Zg
+    print "a2a3:  ", JHUXSHZZ2L2la2a3
+    print "a2L1:  ", JHUXSHZZ2L2la2L1
+    print "a2L1Zg:", JHUXSHZZ2L2la2L1Zg
+    print "a3L1:  ", JHUXSHZZ2L2la3L1
+    print "a3L1Zg:", JHUXSHZZ2L2la3L1Zg
+    print "L1L1Zg:", JHUXSHZZ2L2lL1L1Zg
+    print
+    print "====="
+    print "H->WW"
+    print "====="
+    print
+    print "a1:    ", JHUXSHWWa1
+    print "a2:    ", JHUXSHWWa2
+    print "a3:    ", JHUXSHWWa3
+    print "L1:    ", JHUXSHWWL1
+    print
+    print "a1a2:  ", JHUXSHWWa1a2
+    print "a1a3:  ", JHUXSHWWa1a3
+    print "a1L1:  ", JHUXSHWWa1L1
+    print "a2a3:  ", JHUXSHWWa2a3
+    print "a2L1:  ", JHUXSHWWa2L1
+    print "a3L1:  ", JHUXSHWWa3L1
