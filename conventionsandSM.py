@@ -47,27 +47,26 @@ ghg4HJJ = 1.0062
 kappa_tilde_ttH = 1.6
 
 #https://twiki.cern.ch/twiki/pub/LHCPhysics/LHCHXSWG/Higgs_XSBR_YR4_update.xlsx
-SMXSggH  = (44.14      #'YR4 SM 13TeV'!B24   (ggH cross section, m=125)
-             *1000)    #                     (pb to fb)
-SMBR2L2l = (5.897E-05  #'YR4 SM BR'!CO25     (2e2mu BR, m=125)
-             *3)       #                     (include 2e2tau, 2mu2tau)
-SMXSVBF  = (3.782E+00  #'YR4 SM 13TeV'!B24   (VBF cross section, m=125)
-             *1000)    #                     (pb to fb)
-SMXSWH   = (1.373E+00  #'YR4 SM 13TeV'!R24   (WH cross section, m=125)
-             *1000)    #                     (pb to fb)
-SMXSWpH  = (8.400E-01  #'YR4 SM 13TeV'!X24   (W+H cross section, m=125)
-             *1000)    #                     (pb to fb)
-SMXSWmH  = (5.328E-01  #'YR4 SM 13TeV'!X24   (W-H cross section, m=125)
-             *1000)    #                     (pb to fb)
-SMXSZH   = (8.839E-01  #'YR4 SM 13TeV'!AB24  (ZH cross section, m=125)
-             *1000)    #                     (pb to fb)
-SMXSttH  = (5.071E-01  #'YR4 SM 13TeV'!AK24  (ttH cross section, m=125)
-             *1000)    #                     (pb to fb)
+SMXSggH   = (44.14      #'YR4 SM 13TeV'!B24   (ggH cross section, m=125)
+              *1000)    #                     (pb to fb)
+SMBR2e2mu =  5.897E-05  #'YR4 SM BR'!CO25     (2e2mu BR, m=125)
+SMXSVBF   = (3.782E+00  #'YR4 SM 13TeV'!B24   (VBF cross section, m=125)
+              *1000)    #                     (pb to fb)
+SMXSWH    = (1.373E+00  #'YR4 SM 13TeV'!R24   (WH cross section, m=125)
+              *1000)    #                     (pb to fb)
+SMXSWpH   = (8.400E-01  #'YR4 SM 13TeV'!X24   (W+H cross section, m=125)
+              *1000)    #                     (pb to fb)
+SMXSWmH   = (5.328E-01  #'YR4 SM 13TeV'!X24   (W-H cross section, m=125)
+              *1000)    #                     (pb to fb)
+SMXSZH    = (8.839E-01  #'YR4 SM 13TeV'!AB24  (ZH cross section, m=125)
+              *1000)    #                     (pb to fb)
+SMXSttH   = (5.071E-01  #'YR4 SM 13TeV'!AK24  (ttH cross section, m=125)
+              *1000)    #                     (pb to fb)
 
-SMXSggH2L2l = SMXSggH * SMBR2L2l
-SMXSVBF2L2l = SMXSVBF * SMBR2L2l
-SMXSZH2L2l = SMXSZH * SMBR2L2l
-SMXSWH2L2l = SMXSWH * SMBR2L2l
-SMXSWpH2L2l = SMXSWpH * SMBR2L2l
-SMXSWmH2L2l = SMXSWmH * SMBR2L2l
-SMXSttH2L2l = SMXSttH * SMBR2L2l
+SMXSggH2e2mu = SMXSggH * SMBR2e2mu
+SMXSVBF2e2mu = SMXSVBF * SMBR2e2mu
+SMXSZH2e2mu  = SMXSZH * SMBR2e2mu
+SMXSWH2e2mu  = SMXSWH * SMBR2e2mu
+SMXSWpH2e2mu = SMXSWpH * SMBR2e2mu
+SMXSWmH2e2mu = SMXSWmH * SMBR2e2mu
+SMXSttH2e2mu = SMXSttH * SMBR2e2mu
