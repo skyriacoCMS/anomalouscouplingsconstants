@@ -79,7 +79,7 @@ if __name__ == "__main__":
     print "                     g2*g4*  a2a3XS = {:%}".format((                 g2WH   *g4WH       * JHUXSWHa2a3       ) / JHUXSWHa1     )
     print "               g1prime2*g4*  a3L1XS = {:%}".format((                g1prime2WH   *g4WH  * JHUXSWHa3L1       ) / JHUXSWHa1     )
 #   print "           ghzgs1prime2*g4*a3L1ZgXS = {:%}".format((            ghzgs1prime2WH   *g4WH  * JHUXSWHa3L1Zg     ) / JHUXSWHa1     )
-    print "    WpHXS + WmHXS - WHXS            = {:%}".format((SMXSWpH2L2l + SMXSWmH2L2l - SMXSWH2L2l                        ) / SMXSWH2L2l    )
+    print "    WpHXS + WmHXS - WHXS            = {:%}".format((SMXSWpH2e2mu + SMXSWmH2e2mu - SMXSWH2e2mu               ) / SMXSWH2e2mu   )
     print
     print "  HJJ:"
     print "    a2XS -           g4**2*    a3XS = {:%}".format((JHUXSHJJa2     - ghg4HJJ**2         * JHUXSHJJa3        ) / JHUXSHJJa2    )
