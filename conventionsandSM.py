@@ -63,6 +63,14 @@ SMXSZH   = (8.839E-01  #'YR4 SM 13TeV'!AB24  (ZH cross section, m=125)
              *1000)    #                     (pb to fb)
 SMXSttH  = (5.071E-01  #'YR4 SM 13TeV'!AK24  (ttH cross section, m=125)
              *1000)    #                     (pb to fb)
+SMXSbbH  = (4.880E-01  #'YR4 SM 13TeV'!BB24  (bbH cross section, m=125)
+             *1000)    #                     (pb to fb)
+SMXStqHt = (7.425E-02  #'YR4 SM 13TeV'!BJ24  (tqH t channel cross section, m=125)
+             *1000)    #                     (pb to fb)
+SMXStqHs = (2.879E-03  #'YR4 SM 13TeV'!BT24  (tqH s channel cross section, m=125)
+             *1000)    #                     (pb to fb)
+
+SMXStqH  = SMXStqHt + SMXStqHs
 
 SMXSggH2L2l = SMXSggH * SMBR2L2l
 SMXSVBF2L2l = SMXSVBF * SMBR2L2l
@@ -71,3 +79,5 @@ SMXSWH2L2l = SMXSWH * SMBR2L2l
 SMXSWpH2L2l = SMXSWpH * SMBR2L2l
 SMXSWmH2L2l = SMXSWmH * SMBR2L2l
 SMXSttH2L2l = SMXSttH * SMBR2L2l
+SMXSbbH2L2l = SMXSbbH * SMBR2L2l
+SMXStqH2L2l = SMXStqH * SMBR2L2l
