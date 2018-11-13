@@ -97,4 +97,9 @@ JHUXSttHkappa              = ufloat(     3.1444673,  0.00029462345)
 JHUXSttHkappatilde         = ufloat(     1.2078654,  0.00010920319)
 JHUXSttHkappakappatilde    = ufloat(     6.2361268,   0.0005487899)
 
+JHUXSggZHa1                = ufloat(     57.031958,    0.014328025)
+JHUXSggZHa2                = ufloat(     671845.62,      99.091306)
+JHUXSggZHL1                = ufloat(  0.0011890884,  1.7553479e-07)
+JHUXSggZHL1Zg              = ufloat( 1.7092984e-08,  3.6657475e-12)
+
 execfile(os.path.join(os.path.dirname(__file__), "adjustdefinitions.py"))

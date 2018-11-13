@@ -103,28 +103,34 @@ if __name__ == "__main__":
 
 #Set them to exactly 0
 
-JHUXSVBFa1a3   = \
-JHUXSVBFa2a3   = \
-JHUXSVBFa3L1   = \
-JHUXSVBFa3L1Zg = 0
+JHUXSVBFa1a3    = \
+JHUXSVBFa2a3    = \
+JHUXSVBFa3L1    = \
+JHUXSVBFa3L1Zg  = 0
 
-JHUXSZHa1a3    = \
-JHUXSZHa2a3    = \
-JHUXSZHa3L1    = \
-JHUXSZHa3L1Zg  = 0
+JHUXSZHa1a3     = \
+JHUXSZHa2a3     = \
+JHUXSZHa3L1     = \
+JHUXSZHa3L1Zg   = 0
 
-JHUXSWHa1a3    = \
-JHUXSWHa2a3    = \
-JHUXSWHa3L1    = \
-JHUXSWHL1Zg    = \
-JHUXSWHa1L1Zg  = \
-JHUXSWHa2L1Zg  = \
-JHUXSWHa3L1Zg  = \
-JHUXSWHL1L1Zg  = 0
+JHUXSWHa1a3     = \
+JHUXSWHa2a3     = \
+JHUXSWHa3L1     = \
+JHUXSWHL1Zg     = \
+JHUXSWHa1L1Zg   = \
+JHUXSWHa2L1Zg   = \
+JHUXSWHa3L1Zg   = \
+JHUXSWHL1L1Zg   = 0
 
-JHUXSHJJa2a3   = 0
+JHUXSHJJa2a3    = 0
 
 JHUXSttHkappakappatilde = 0
+
+JHUXSggZHa3     = \
+JHUXSggZHa1a3   = \
+JHUXSggZHa2a3   = \
+JHUXSggZHa3L1   = \
+JHUXSggZHa3L1Zg = 0
 
 #defined this way, just make sure
 for _ in """
@@ -133,6 +139,7 @@ for _ in """
   JHUXSWHa1a3 JHUXSWHa2a3 JHUXSWHa3L1
   JHUXSHJJa2a3 JHUXSttHkappakappatilde
   JHUXSWHL1Zg JHUXSWHa1L1Zg JHUXSWHa2L1Zg JHUXSWHa3L1Zg JHUXSWHL1L1Zg
+  JHUXSggZHa3 JHUXSggZHa1a3 JHUXSggZHa2a3 JHUXSggZHa3L1 JHUXSggZHa3L1Zg
 """.split():
   assert globals()[_] == 0, (_, globals()[_])
 for k, v in globals().items():
