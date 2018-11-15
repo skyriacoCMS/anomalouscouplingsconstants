@@ -41,6 +41,13 @@ JHUXSHJJa2a3       = (JHUXSHJJa2a3       -                        JHUXSHJJa2    
 
 JHUXSttHkappakappatilde = (JHUXSttHkappakappatilde - JHUXSttHkappa - kappa_tilde_ttH**2 * JHUXSttHkappatilde) / kappa_tilde_ttH
 
+JHUXSggZHa1a2      = (JHUXSggZHa1a2      -                    JHUXSggZHa1    - g2ggZH           **2 * JHUXSggZHa2     ) / (g2ggZH                               )
+JHUXSggZHa1L1      = (JHUXSggZHa1L1      -                    JHUXSggZHa1    - g1prime2ggZH     **2 * JHUXSggZHL1     ) / (g1prime2ggZH                         )
+JHUXSggZHa1L1Zg    = (JHUXSggZHa1L1Zg    -                    JHUXSggZHa1    - ghzgs1prime2ggZH **2 * JHUXSggZHL1Zg   ) / (ghzgs1prime2ggZH                     )
+JHUXSggZHa2L1      = (JHUXSggZHa2L1      - g2ggZH       **2 * JHUXSggZHa2    - g1prime2ggZH     **2 * JHUXSggZHL1     ) / (g2ggZH            * g1prime2ggZH     )
+JHUXSggZHa2L1Zg    = (JHUXSggZHa2L1Zg    - g2ggZH       **2 * JHUXSggZHa2    - ghzgs1prime2ggZH **2 * JHUXSggZHL1Zg   ) / (g2ggZH            * ghzgs1prime2ggZH )
+JHUXSggZHL1L1Zg    = (JHUXSggZHL1L1Zg    - g1prime2ggZH **2 * JHUXSggZHL1    - ghzgs1prime2ggZH **2 * JHUXSggZHL1Zg   ) / (g1prime2ggZH      * ghzgs1prime2ggZH )
+
 normalize_WH_to_ZH = SMXSWH / JHUXSWHa1 / (SMXSZH / JHUXSZHa1)
 
 if __name__ == "__main__":
@@ -92,6 +99,16 @@ if __name__ == "__main__":
     JHUXSttHkkt = JHUXSttHkappakappatilde
     print "     kXS -           k~**2*    k~XS = {:%}".format((JHUXSttHk      - kt**2              * JHUXSttHkt        ) / JHUXSttHk     )
     print "                        k~*   kk~XS = {:%}".format((                 kt                 * JHUXSttHkkt       ) / JHUXSttHk     )
+    print
+    print "  ggZH:"
+    print "    a1XS -           g2**2*    a2XS = {:%}".format((JHUXSggZHa1    - g2ggZH**2          * JHUXSggZHa2       ) / JHUXSggZHa1   )
+#   print "    a1XS -           g4**2*    a3XS = {:%}".format((JHUXSggZHa1    - g4ggZH**2          * JHUXSggZHa3       ) / JHUXSggZHa1   )
+    print "    a1XS -     g1prime2**2*    L1XS = {:%}".format((JHUXSggZHa1    - g1prime2ggZH**2    * JHUXSggZHL1       ) / JHUXSggZHa1   )
+    print "    a1XS - ghzgs1prime2**2*  L1ZgXS = {:%}".format((JHUXSggZHa1    - ghzgs1prime2ggZH**2* JHUXSggZHL1Zg     ) / JHUXSggZHa1   )
+#   print "                        g4*  a1a3XS = {:%}".format((                 g4ggZH             * JHUXSggZHa1a3     ) / JHUXSggZHa1   )
+#   print "                     g2*g4*  a2a3XS = {:%}".format((                 g2ggZH *g4ggZH     * JHUXSggZHa2a3     ) / JHUXSggZHa1   )
+#   print "               g1prime2*g4*  a3L1XS = {:%}".format((                g1prime2ggZH *g4ggZH* JHUXSggZHa3L1     ) / JHUXSggZHa1   )
+#   print "           ghzgs1prime2*g4*a3L1ZgXS = {:%}".format((            ghzgs1prime2ggZH *g4ggZH* JHUXSggZHa3L1Zg   ) / JHUXSggZHa1   )
     print
     print "  VH:"
     print "    a1XS -           g2**2*    a2XS  = {:%}".format((JHUXSZHa1 + JHUXSWHa1*normalize_WH_to_ZH - g2VH              **2 * (JHUXSZHa2   + JHUXSWHa2  *normalize_WH_to_ZH)) / (JHUXSZHa1 + JHUXSWHa1*normalize_WH_to_ZH))
@@ -228,3 +245,24 @@ if __name__ == "__main__":
     print "k~:    ", JHUXSttHkappatilde
     print
     print "kk~:   ", JHUXSttHkappakappatilde
+    print
+    print "===="
+    print "ggZH"
+    print "===="
+    print
+    print "a1:    ", JHUXSggZHa1
+    print "a2:    ", JHUXSggZHa2
+    print "a3:    ", JHUXSggZHa3
+    print "L1:    ", JHUXSggZHL1
+    print "L1Zg:  ", JHUXSggZHL1Zg
+    print
+    print "a1a2:  ", JHUXSggZHa1a2
+    print "a1a3:  ", JHUXSggZHa1a3
+    print "a1L1:  ", JHUXSggZHa1L1
+    print "a1L1Zg:", JHUXSggZHa1L1Zg
+    print "a2a3:  ", JHUXSggZHa2a3
+    print "a2L1:  ", JHUXSggZHa2L1
+    print "a2L1Zg:", JHUXSggZHa2L1Zg
+    print "a3L1:  ", JHUXSggZHa3L1
+    print "a3L1Zg:", JHUXSggZHa3L1Zg
+    print "L1L1Zg:", JHUXSggZHL1L1Zg

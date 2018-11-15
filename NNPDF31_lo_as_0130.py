@@ -101,5 +101,12 @@ JHUXSggZHa1                = ufloat(     57.031958,    0.014328025)
 JHUXSggZHa2                = ufloat(     671845.62,      99.091306)
 JHUXSggZHL1                = ufloat(  0.0011890884,  1.7553479e-07)
 JHUXSggZHL1Zg              = ufloat( 1.7092984e-08,  3.6657475e-12)
+JHUXSggZHa1a2              = ufloat(     41.658679,   0.0086359718)
+JHUXSggZHa1L1              = ufloat(     40.426298,   0.0083464217)
+JHUXSggZHa1L1Zg            = ufloat(     117.40093,    0.033563669)
+JHUXSggZHa2L1              = ufloat(     229.47618,    0.033859877)
+JHUXSggZHa2L1Zg            = ufloat(     112.29498,    0.025010948)
+JHUXSggZHL1L1Zg            = ufloat(     112.32675,    0.024952061)
+
 
 execfile(os.path.join(os.path.dirname(__file__), "adjustdefinitions.py"))
