@@ -68,4 +68,7 @@ JHUXSggZHa2L1              = ufloat(     220.89541,    0.032586896)
 JHUXSggZHa2L1Zg            = ufloat(     108.41597,    0.024144907)
 JHUXSggZHL1L1Zg            = ufloat(      108.4218,    0.024102713)
 
+JHUXSggZHkappa             = ufloat(     45.639566,   0.0095356748)
+JHUXSggZHkappatilde        = ufloat(      50.83718,     0.00940342)
+
 execfile(os.path.join(os.path.dirname(__file__), "adjustdefinitions.py"))

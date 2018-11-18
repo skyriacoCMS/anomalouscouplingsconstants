@@ -43,12 +43,13 @@ g1prime2VH = -522.3034453633128 #-sqrt((JHUXSZHa1 + JHUXSWHa1*normalize_WH_to_ZH
 ghzgs1prime2VH = -1027.387141119873 #-sqrt((JHUXSZHa1 + JHUXSWHa1*normalize_WH_to_ZH) / (JHUXSZHL1Zg + JHUXSWHL1Zg*normalize_WH_to_ZH))
 nominal_normalize_WH_to_ZH = 0.15070409765374365
 
+ghg4HJJ = 1.0062
+kappa_tilde_ttH = 1.6
+
 g2ggZH = 0.0092415
 g1prime2ggZH = -219.641
 ghzgs1prime2ggZH = -57787
-
-ghg4HJJ = 1.0062
-kappa_tilde_ttH = 1.6
+kappa_tilde_ggZH = 0.9475
 
 #https://twiki.cern.ch/twiki/pub/LHCPhysics/LHCHXSWG/Higgs_XSBR_YR4_update.xlsx
 SMXSggH   = (44.14      #'YR4 SM 13TeV'!B24   (ggH cross section, m=125)
