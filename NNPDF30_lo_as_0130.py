@@ -71,4 +71,16 @@ JHUXSggZHL1L1Zg            = ufloat(      108.4218,    0.024102713)
 JHUXSggZHkappa             = ufloat(     45.639566,   0.0095356748)
 JHUXSggZHkappatilde        = ufloat(      50.83718,     0.00940342)
 
+JHUXSggZHkappakappatilde   = ufloat(  float("nan"),   float("nan"))
+
+JHUXSggZHa1kappa           = ufloat(     10.422093,   0.0031661331)
+JHUXSggZHa2kappa           = ufloat(     181.20091,    0.030181201)
+JHUXSggZHL1kappa           = ufloat(     182.00828,    0.030399493)
+JHUXSggZHL1Zgkappa         = ufloat(     98.241292,    0.024470784)
+
+JHUXSggZHa1kappatilde      = ufloat(     100.84628,    0.021089319)
+JHUXSggZHa2kappatilde      = ufloat(     100.86741,    0.015308484)
+JHUXSggZHL1kappatilde      = ufloat(      100.8596,    0.015353585)
+JHUXSggZHL1Zgkappatilde    = ufloat(     100.89172,    0.024879389)
+
 execfile(os.path.join(os.path.dirname(__file__), "adjustdefinitions.py"))
