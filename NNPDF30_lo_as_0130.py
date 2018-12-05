@@ -71,7 +71,7 @@ JHUXSggZHL1L1Zg            = ufloat(      108.4218,    0.024102713)
 JHUXSggZHkappa             = ufloat(     45.639566,   0.0095356748)
 JHUXSggZHkappatilde        = ufloat(      50.83718,     0.00940342)
 
-JHUXSggZHkappakappatilde   = ufloat(  float("nan"),   float("nan"))
+JHUXSggZHkappakappatilde   = ufloat(     91.269129,    0.017922304)
 
 JHUXSggZHa1kappa           = ufloat(     10.422093,   0.0031661331)
 JHUXSggZHa2kappa           = ufloat(     181.20091,    0.030181201)
