@@ -58,14 +58,10 @@ JHUXSttHkappatilde         = ufloat(0.35609194,        0.000492662)
 JHUXSttHkappakappatilde    = ufloat(1.8231162489,       0.00254131)
 
 JHUXSggZHa1                = ufloat(     55.231245,    0.013851438)
-JHUXSggZHa2                = ufloat(     646688.83,      95.353549)
 JHUXSggZHL1                = ufloat(  0.0011448724,  1.6894815e-07)
 JHUXSggZHL1Zg              = ufloat( 1.6539803e-08,  3.5429326e-12)
-JHUXSggZHa1a2              = ufloat(     40.049365,    0.008315672)
 JHUXSggZHa1L1              = ufloat(     38.873281,   0.0080381603)
 JHUXSggZHa1L1Zg            = ufloat(     113.62989,    0.032448764)
-JHUXSggZHa2L1              = ufloat(     220.89541,    0.032586896)
-JHUXSggZHa2L1Zg            = ufloat(     108.41597,    0.024144907)
 JHUXSggZHL1L1Zg            = ufloat(      108.4218,    0.024102713)
 
 JHUXSggZHkappa             = ufloat(     45.639566,   0.0095356748)
@@ -74,12 +70,10 @@ JHUXSggZHkappatilde        = ufloat(      50.83718,     0.00940342)
 JHUXSggZHkappakappatilde   = ufloat(     91.269129,    0.017922304)
 
 JHUXSggZHa1kappa           = ufloat(     10.422093,   0.0031661331)
-JHUXSggZHa2kappa           = ufloat(     181.20091,    0.030181201)
 JHUXSggZHL1kappa           = ufloat(     182.00828,    0.030399493)
 JHUXSggZHL1Zgkappa         = ufloat(     98.241292,    0.024470784)
 
 JHUXSggZHa1kappatilde      = ufloat(     100.84628,    0.021089319)
-JHUXSggZHa2kappatilde      = ufloat(     100.86741,    0.015308484)
 JHUXSggZHL1kappatilde      = ufloat(      100.8596,    0.015353585)
 JHUXSggZHL1Zgkappatilde    = ufloat(     100.89172,    0.024879389)
 

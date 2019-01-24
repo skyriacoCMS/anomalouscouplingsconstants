@@ -35,7 +35,6 @@ ghzgs1prime2ZH = -642.9534550379002
 g2WH = 0.0998956
 g4WH = 0.1236136
 g1prime2WH = -525.274
-ghzgs1prime2WH = -1000
 
 g2VH = 0.10430356645812816 #sqrt((JHUXSZHa1 + JHUXSWHa1*normalize_WH_to_ZH) / (JHUXSZHa2 + JHUXSWHa2*normalize_WH_to_ZH))
 g4VH = 0.13053750671388425 #sqrt((JHUXSZHa1 + JHUXSWHa1*normalize_WH_to_ZH) / (JHUXSZHa3 + JHUXSWHa3*normalize_WH_to_ZH))
@@ -46,7 +45,6 @@ nominal_normalize_WH_to_ZH = 0.15070409765374365
 ghg4HJJ = 1.0062
 kappa_tilde_ttH = 1.6
 
-g2ggZH = 0.0092415
 g1prime2ggZH = -219.641
 ghzgs1prime2ggZH = -57787
 kappa_tilde_ggZH = 0.9475
