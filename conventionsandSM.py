@@ -53,6 +53,7 @@ kappa_tilde_ggZH = 0.9475
 SMXSggH   = (44.14      #'YR4 SM 13TeV'!B24   (ggH cross section, m=125)
               *1000)    #                     (pb to fb)
 SMBR2e2mu =  5.897E-05  #'YR4 SM BR'!CO25     (2e2mu BR, m=125)
+SMBR4l    =  2.745E-04  #'YR4 SM BR'!CL25     (4l BR including taus, m=125)
 SMXSVBF   = (3.782E+00  #'YR4 SM 13TeV'!B24   (VBF cross section, m=125)
               *1000)    #                     (pb to fb)
 SMXSWH    = (1.373E+00  #'YR4 SM 13TeV'!R24   (WH cross section, m=125)
@@ -83,3 +84,13 @@ SMXSWmH2e2mu = SMXSWmH * SMBR2e2mu
 SMXSttH2e2mu = SMXSttH * SMBR2e2mu
 SMXSbbH2e2mu = SMXSbbH * SMBR2e2mu
 SMXStqH2e2mu = SMXStqH * SMBR2e2mu
+
+SMXSggH4l = SMXSggH * SMBR4l
+SMXSVBF4l = SMXSVBF * SMBR4l
+SMXSZH4l  = SMXSZH  * SMBR4l
+SMXSWH4l  = SMXSWH  * SMBR4l
+SMXSWpH4l = SMXSWpH * SMBR4l
+SMXSWmH4l = SMXSWmH * SMBR4l
+SMXSttH4l = SMXSttH * SMBR4l
+SMXSbbH4l = SMXSbbH * SMBR4l
+SMXStqH4l = SMXStqH * SMBR4l
