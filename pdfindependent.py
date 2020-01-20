@@ -168,8 +168,7 @@ for _ in """
   JHUXSHWWL1Zg  JHUXSHWWa1L1Zg  JHUXSHWWa2L1Zg  JHUXSHWWa3L1Zg  JHUXSHWWL1L1Zg
 """.split():
   assert globals()[_] == 0, (_, globals()[_])
-k = v = None
-for k, v in globals().items():
+for k, v in list(globals().items()):
     if "__" in k: continue
     assert v is not None, k
 del k, v, _
