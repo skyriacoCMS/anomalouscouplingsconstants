@@ -1,10 +1,12 @@
 #!/usr/bin/env python
 
+from __future__ import absolute_import
+from past.builtins import execfile
 import os
 
 from uncertainties import ufloat
 
-from conventionsandSM import *
+from .conventionsandSM import *
 
 JHUXSVBFa1                 = ufloat(     941.57048,     0.34686523)
 JHUXSVBFa2                 = ufloat(     12619.356,      2.6989174)
@@ -53,7 +55,8 @@ JHUXSWHa3L1                = ufloat(      31773358,      677.46665)
 #Try to estimate it from other numbers
 #(in a function to avoid exposing local variables)
 def JHUXSWHa1a2():
-  import NNPDF30_lo_as_0130, numpy
+  from . import NNPDF30_lo_as_0130
+  import numpy
   WH31_over_WH30 = [
     JHUXSWHa1 / NNPDF30_lo_as_0130.JHUXSWHa1,
     JHUXSWHa2 / NNPDF30_lo_as_0130.JHUXSWHa2,

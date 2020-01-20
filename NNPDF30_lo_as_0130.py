@@ -1,10 +1,12 @@
 #!/usr/bin/env python
 
+from __future__ import absolute_import
+from past.builtins import execfile
 import os
 
 from uncertainties import ufloat
 
-from conventionsandSM import *
+from .conventionsandSM import *
 
 JHUXSVBFa1                 = ufloat(     968.88143,     0.42919631)
 JHUXSVBFa2                 = ufloat(     13097.831,       3.335825)

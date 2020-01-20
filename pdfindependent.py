@@ -1,9 +1,11 @@
 #!/usr/bin/env python
 
+from __future__ import print_function
+from __future__ import absolute_import
 from uncertainties import ufloat
 from uncertainties.umath import sqrt
 
-from conventionsandSM import *
+from .conventionsandSM import *
 
 JHUXSHZZ2e2mua1             = ufloat(     7.1517044,  0.00027591496) / 2
 JHUXSHZZ2e2mua2             = ufloat(     2.5850323,  0.00010874196) / 2
@@ -100,42 +102,42 @@ JHUXSHWWa3L1Zg       = 0
 JHUXSHWWL1L1Zg       = 0
 
 if __name__ == "__main__":
-    print "=============================================="
-    print "All of the following should be around 0"
-    print "(if they're huge that indicates a mistake)"
-    print "(but if they're not within errors that's fine)"
-    print "=============================================="
-    print
-    print "  decay to 2e2mu:"
-    print "    a1XS -           g2**2*    a2XS = {:%}".format((JHUXSHZZ2e2mua1 - g2HZZ**2           * JHUXSHZZ2e2mua2    ) / JHUXSHZZ2e2mua1)
-    print "    a1XS -           g4**2*    a3XS = {:%}".format((JHUXSHZZ2e2mua1 - g4HZZ**2           * JHUXSHZZ2e2mua3    ) / JHUXSHZZ2e2mua1)
-    print "    a1XS -     g1prime2**2*    L1XS = {:%}".format((JHUXSHZZ2e2mua1 - g1prime2HZZ**2     * JHUXSHZZ2e2muL1    ) / JHUXSHZZ2e2mua1)
-    print "    a1XS - ghzgs1prime2**2*  L1ZgXS = {:%}".format((JHUXSHZZ2e2mua1 - ghzgs1prime2HZZ**2 * JHUXSHZZ2e2muL1Zg  ) / JHUXSHZZ2e2mua1)
-    print "                        g4*  a1a3XS = {:%}".format((                 g4HZZ              * JHUXSHZZ2e2mua1a3  ) / JHUXSHZZ2e2mua1)
-    print "                     g2*g4*  a2a3XS = {:%}".format((                 g2HZZ*g4HZZ        * JHUXSHZZ2e2mua2a3  ) / JHUXSHZZ2e2mua1)
-    print "               g1prime2*g4*  a3L1XS = {:%}".format((                 g1prime2HZZ*g4HZZ  * JHUXSHZZ2e2mua3L1  ) / JHUXSHZZ2e2mua1)
-    print "           ghzgs1prime2*g4*a3L1ZgXS = {:%}".format((             ghzgs1prime2HZZ*g4HZZ  * JHUXSHZZ2e2mua3L1Zg) / JHUXSHZZ2e2mua1)
-    print
-    print "  decay to any 4l:"
-    print "    a1XS -           g2**2*    a2XS = {:%}".format((JHUXSHZZ4la1    - g2HZZ**2           * JHUXSHZZ4la2       ) / JHUXSHZZ4la1   )
-    print "    a1XS -           g4**2*    a3XS = {:%}".format((JHUXSHZZ4la1    - g4HZZ**2           * JHUXSHZZ4la3       ) / JHUXSHZZ4la1   )
-    print "    a1XS -     g1prime2**2*    L1XS = {:%}".format((JHUXSHZZ4la1    - g1prime2HZZ**2     * JHUXSHZZ4lL1       ) / JHUXSHZZ4la1   )
-    print "    a1XS - ghzgs1prime2**2*  L1ZgXS = {:%}".format((JHUXSHZZ4la1    - ghzgs1prime2HZZ**2 * JHUXSHZZ4lL1Zg     ) / JHUXSHZZ4la1   )
-    print "                        g4*  a1a3XS = {:%}".format((                  g4HZZ              * JHUXSHZZ4la1a3     ) / JHUXSHZZ4la1   )
+    print("==============================================")
+    print("All of the following should be around 0")
+    print("(if they're huge that indicates a mistake)")
+    print("(but if they're not within errors that's fine)")
+    print("==============================================")
+    print()
+    print("  decay to 2e2mu:")
+    print("    a1XS -           g2**2*    a2XS = {:%}".format((JHUXSHZZ2e2mua1 - g2HZZ**2           * JHUXSHZZ2e2mua2    ) / JHUXSHZZ2e2mua1))
+    print("    a1XS -           g4**2*    a3XS = {:%}".format((JHUXSHZZ2e2mua1 - g4HZZ**2           * JHUXSHZZ2e2mua3    ) / JHUXSHZZ2e2mua1))
+    print("    a1XS -     g1prime2**2*    L1XS = {:%}".format((JHUXSHZZ2e2mua1 - g1prime2HZZ**2     * JHUXSHZZ2e2muL1    ) / JHUXSHZZ2e2mua1))
+    print("    a1XS - ghzgs1prime2**2*  L1ZgXS = {:%}".format((JHUXSHZZ2e2mua1 - ghzgs1prime2HZZ**2 * JHUXSHZZ2e2muL1Zg  ) / JHUXSHZZ2e2mua1))
+    print("                        g4*  a1a3XS = {:%}".format((                 g4HZZ              * JHUXSHZZ2e2mua1a3  ) / JHUXSHZZ2e2mua1))
+    print("                     g2*g4*  a2a3XS = {:%}".format((                 g2HZZ*g4HZZ        * JHUXSHZZ2e2mua2a3  ) / JHUXSHZZ2e2mua1))
+    print("               g1prime2*g4*  a3L1XS = {:%}".format((                 g1prime2HZZ*g4HZZ  * JHUXSHZZ2e2mua3L1  ) / JHUXSHZZ2e2mua1))
+    print("           ghzgs1prime2*g4*a3L1ZgXS = {:%}".format((             ghzgs1prime2HZZ*g4HZZ  * JHUXSHZZ2e2mua3L1Zg) / JHUXSHZZ2e2mua1))
+    print()
+    print("  decay to any 4l:")
+    print("    a1XS -           g2**2*    a2XS = {:%}".format((JHUXSHZZ4la1    - g2HZZ**2           * JHUXSHZZ4la2       ) / JHUXSHZZ4la1   ))
+    print("    a1XS -           g4**2*    a3XS = {:%}".format((JHUXSHZZ4la1    - g4HZZ**2           * JHUXSHZZ4la3       ) / JHUXSHZZ4la1   ))
+    print("    a1XS -     g1prime2**2*    L1XS = {:%}".format((JHUXSHZZ4la1    - g1prime2HZZ**2     * JHUXSHZZ4lL1       ) / JHUXSHZZ4la1   ))
+    print("    a1XS - ghzgs1prime2**2*  L1ZgXS = {:%}".format((JHUXSHZZ4la1    - ghzgs1prime2HZZ**2 * JHUXSHZZ4lL1Zg     ) / JHUXSHZZ4la1   ))
+    print("                        g4*  a1a3XS = {:%}".format((                  g4HZZ              * JHUXSHZZ4la1a3     ) / JHUXSHZZ4la1   ))
 #    print "                     g2*g4*  a2a3XS = {:%}".format((                  g2HZZ*g4HZZ        * JHUXSHZZ4la2a3     ) / JHUXSHZZ4la1   )
 #    print "               g1prime2*g4*  a3L1XS = {:%}".format((                  g1prime2HZZ*g4HZZ  * JHUXSHZZ4la3L1     ) / JHUXSHZZ4la1   )
 #    print "           ghzgs1prime2*g4*a3L1ZgXS = {:%}".format((              ghzgs1prime2HZZ*g4HZZ  * JHUXSHZZ4la3L1Zg   ) / JHUXSHZZ4la1   )
-    print
-    print "  HWW:"
-    print "    a1XS -           g2**2*    a2XS = {:%}".format((JHUXSHWWa1      - g2HWW**2           * JHUXSHWWa2         ) / JHUXSHWWa1     )
-    print "    a1XS -           g4**2*    a3XS = {:%}".format((JHUXSHWWa1      - g4HWW**2           * JHUXSHWWa3         ) / JHUXSHWWa1     )
-    print "    a1XS -     g1prime2**2*    L1XS = {:%}".format((JHUXSHWWa1      - g1prime2HWW**2     * JHUXSHWWL1         ) / JHUXSHWWa1     )
+    print()
+    print("  HWW:")
+    print("    a1XS -           g2**2*    a2XS = {:%}".format((JHUXSHWWa1      - g2HWW**2           * JHUXSHWWa2         ) / JHUXSHWWa1     ))
+    print("    a1XS -           g4**2*    a3XS = {:%}".format((JHUXSHWWa1      - g4HWW**2           * JHUXSHWWa3         ) / JHUXSHWWa1     ))
+    print("    a1XS -     g1prime2**2*    L1XS = {:%}".format((JHUXSHWWa1      - g1prime2HWW**2     * JHUXSHWWL1         ) / JHUXSHWWa1     ))
 #   print "    a1XS - ghzgs1prime2**2*  L1ZgXS = {:%}".format((JHUXSHWWa1      - ghzgs1prime2HWW**2 * JHUXSHWWL1Zg       ) / JHUXSHWWa1     )
-    print "                        g4*  a1a3XS = {:%}".format((                  g4HWW              * JHUXSHWWa1a3       ) / JHUXSHWWa1     )
-    print "                     g2*g4*  a2a3XS = {:%}".format((                  g2HWW  *g4HWW      * JHUXSHWWa2a3       ) / JHUXSHWWa1     )
-    print "               g1prime2*g4*  a3L1XS = {:%}".format((                 g1prime2HWW  *g4HWW * JHUXSHWWa3L1       ) / JHUXSHWWa1     )
+    print("                        g4*  a1a3XS = {:%}".format((                  g4HWW              * JHUXSHWWa1a3       ) / JHUXSHWWa1     ))
+    print("                     g2*g4*  a2a3XS = {:%}".format((                  g2HWW  *g4HWW      * JHUXSHWWa2a3       ) / JHUXSHWWa1     ))
+    print("               g1prime2*g4*  a3L1XS = {:%}".format((                 g1prime2HWW  *g4HWW * JHUXSHWWa3L1       ) / JHUXSHWWa1     ))
 #   print "           ghzgs1prime2*g4*a3L1ZgXS = {:%}".format((             ghzgs1prime2HWW  *g4HWW * JHUXSHWWa3L1Zg     ) / JHUXSHWWa1     )
-    print
+    print()
 
 #Set them to exactly 0
 
@@ -166,72 +168,73 @@ for _ in """
   JHUXSHWWL1Zg  JHUXSHWWa1L1Zg  JHUXSHWWa2L1Zg  JHUXSHWWa3L1Zg  JHUXSHWWL1L1Zg
 """.split():
   assert globals()[_] == 0, (_, globals()[_])
+k = v = None
 for k, v in globals().items():
     if "__" in k: continue
     assert v is not None, k
 del k, v, _
 
 if __name__ == "__main__":
-    print "================================================================="
-    print "pure cross sections are for ai=1."
-    print "interference cross sections are for ai=aj=1, minus the pure terms"
-    print "================================================================="
-    print
-    print "============"
-    print "H->ZZ->2e2mu"
-    print "============"
-    print
-    print "a1:    ", JHUXSHZZ2e2mua1
-    print "a2:    ", JHUXSHZZ2e2mua2
-    print "a3:    ", JHUXSHZZ2e2mua3
-    print "L1:    ", JHUXSHZZ2e2muL1
-    print "L1Zg:  ", JHUXSHZZ2e2muL1Zg
-    print
-    print "a1a2:  ", JHUXSHZZ2e2mua1a2
-    print "a1a3:  ", JHUXSHZZ2e2mua1a3
-    print "a1L1:  ", JHUXSHZZ2e2mua1L1
-    print "a1L1Zg:", JHUXSHZZ2e2mua1L1Zg
-    print "a2a3:  ", JHUXSHZZ2e2mua2a3
-    print "a2L1:  ", JHUXSHZZ2e2mua2L1
-    print "a2L1Zg:", JHUXSHZZ2e2mua2L1Zg
-    print "a3L1:  ", JHUXSHZZ2e2mua3L1
-    print "a3L1Zg:", JHUXSHZZ2e2mua3L1Zg
-    print "L1L1Zg:", JHUXSHZZ2e2muL1L1Zg
-    print
-    print "========="
-    print "H->ZZ->4l"
-    print "(e, m, t)"
-    print "========="
-    print
-    print "a1:    ", JHUXSHZZ4la1
-    print "a2:    ", JHUXSHZZ4la2
-    print "a3:    ", JHUXSHZZ4la3
-    print "L1:    ", JHUXSHZZ4lL1
-    print "L1Zg:  ", JHUXSHZZ4lL1Zg
-    print
-    print "a1a2:  ", JHUXSHZZ4la1a2
-    print "a1a3:  ", JHUXSHZZ4la1a3
-    print "a1L1:  ", JHUXSHZZ4la1L1
-    print "a1L1Zg:", JHUXSHZZ4la1L1Zg
+    print("=================================================================")
+    print("pure cross sections are for ai=1.")
+    print("interference cross sections are for ai=aj=1, minus the pure terms")
+    print("=================================================================")
+    print()
+    print("============")
+    print("H->ZZ->2e2mu")
+    print("============")
+    print()
+    print("a1:    ", JHUXSHZZ2e2mua1)
+    print("a2:    ", JHUXSHZZ2e2mua2)
+    print("a3:    ", JHUXSHZZ2e2mua3)
+    print("L1:    ", JHUXSHZZ2e2muL1)
+    print("L1Zg:  ", JHUXSHZZ2e2muL1Zg)
+    print()
+    print("a1a2:  ", JHUXSHZZ2e2mua1a2)
+    print("a1a3:  ", JHUXSHZZ2e2mua1a3)
+    print("a1L1:  ", JHUXSHZZ2e2mua1L1)
+    print("a1L1Zg:", JHUXSHZZ2e2mua1L1Zg)
+    print("a2a3:  ", JHUXSHZZ2e2mua2a3)
+    print("a2L1:  ", JHUXSHZZ2e2mua2L1)
+    print("a2L1Zg:", JHUXSHZZ2e2mua2L1Zg)
+    print("a3L1:  ", JHUXSHZZ2e2mua3L1)
+    print("a3L1Zg:", JHUXSHZZ2e2mua3L1Zg)
+    print("L1L1Zg:", JHUXSHZZ2e2muL1L1Zg)
+    print()
+    print("=========")
+    print("H->ZZ->4l")
+    print("(e, m, t)")
+    print("=========")
+    print()
+    print("a1:    ", JHUXSHZZ4la1)
+    print("a2:    ", JHUXSHZZ4la2)
+    print("a3:    ", JHUXSHZZ4la3)
+    print("L1:    ", JHUXSHZZ4lL1)
+    print("L1Zg:  ", JHUXSHZZ4lL1Zg)
+    print()
+    print("a1a2:  ", JHUXSHZZ4la1a2)
+    print("a1a3:  ", JHUXSHZZ4la1a3)
+    print("a1L1:  ", JHUXSHZZ4la1L1)
+    print("a1L1Zg:", JHUXSHZZ4la1L1Zg)
 #    print "a2a3:  ", JHUXSHZZ4la2a3
 #    print "a2L1:  ", JHUXSHZZ4la2L1
 #    print "a2L1Zg:", JHUXSHZZ4la2L1Zg
 #    print "a3L1:  ", JHUXSHZZ4la3L1
 #    print "a3L1Zg:", JHUXSHZZ4la3L1Zg
 #    print "L1L1Zg:", JHUXSHZZ4lL1L1Zg
-    print
-    print "====="
-    print "H->WW"
-    print "====="
-    print
-    print "a1:    ", JHUXSHWWa1
-    print "a2:    ", JHUXSHWWa2
-    print "a3:    ", JHUXSHWWa3
-    print "L1:    ", JHUXSHWWL1
-    print
-    print "a1a2:  ", JHUXSHWWa1a2
-    print "a1a3:  ", JHUXSHWWa1a3
-    print "a1L1:  ", JHUXSHWWa1L1
-    print "a2a3:  ", JHUXSHWWa2a3
-    print "a2L1:  ", JHUXSHWWa2L1
-    print "a3L1:  ", JHUXSHWWa3L1
+    print()
+    print("=====")
+    print("H->WW")
+    print("=====")
+    print()
+    print("a1:    ", JHUXSHWWa1)
+    print("a2:    ", JHUXSHWWa2)
+    print("a3:    ", JHUXSHWWa3)
+    print("L1:    ", JHUXSHWWL1)
+    print()
+    print("a1a2:  ", JHUXSHWWa1a2)
+    print("a1a3:  ", JHUXSHWWa1a3)
+    print("a1L1:  ", JHUXSHWWa1L1)
+    print("a2a3:  ", JHUXSHWWa2a3)
+    print("a2L1:  ", JHUXSHWWa2L1)
+    print("a3L1:  ", JHUXSHWWa3L1)
